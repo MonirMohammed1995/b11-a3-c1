@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse For Pets</title>
+    <!-- Google Fonts -->
+    <!-- DaisyUI + Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ADLam Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* ADLam Display */
+      .adlam-display {
+        font-family: "ADLaM Display", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      /* Sora */
+      .sora {
+        font-family: "Sora", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="max-w-[1440px] mx-auto">
+    <header>
+      <!-- Navbar -->
+      <nav class="sora">
+        <div class="navbar flex justify-between items-center bg-yellow-50">
+          <div class="lg:flex">
+            <img class="w-10" src="./assets/logo-header.png" alt="" />
+            <h1 class="sm: hidden md:hidden lg:flex text-2xl">
+              Browse<span class="text-yellow-400">4</span>Pets
+            </h1>
+          </div>
+          <div class="md: hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="#">Find a pet</a></li>
+              <li><a href="#">Breeds</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="lg:flex gap-4">
+            <button class="md: hidden lg:flex">
+              <img src="./assets/bell.png" alt="" />
+            </button>
+            <button class="md: hidden lg:flex">
+              <img src="./assets/search.png" alt="" />
+            </button>
+            <a
+              class="btn bg-transparent border border-yellow-400 md: hidden lg:flex"
+              >Login</a
+            >
+            <a class="btn bg-yellow-400 md: hidden lg:flex">Register</a>
+            <button class="md: flex lg:hidden">
+              <img src="./assets/menu.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Banner -->
+      <div
+        class="hero w" style="background-image: url(./assets/cat-big.png);"
+      >
+        <div class="hero-overlay bg-opacity-0 ">
+            
+        </div>
+        <div class="hero-content mb-24">
+          <div class="">
+            <h1 class="mb-5 text-5xl font-bold adlam-display">Pamper Your Pet,<br>Because They Deserve<br>The Best</h1>
+            <p class="mb-5">
+                Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
