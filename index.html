@@ -47,6 +47,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              'card-bg': '#F9DF8A'
             },
           },
         },
@@ -54,58 +55,138 @@
     </script>
   </head>
   <body class="max-w-[1440px] mx-auto">
-    <header>
+    <header class="">
       <!-- Navbar -->
       <nav class="sora">
-        <div class="navbar flex justify-between items-center bg-yellow-50">
+        <div class="flex items-center justify-between navbar bg-yellow-50">
           <div class="lg:flex">
             <img class="w-10" src="./assets/logo-header.png" alt="" />
-            <h1 class="sm: hidden md:hidden lg:flex text-2xl">
+            <h1 class="hidden text-2xl sm: md:hidden lg:flex">
               Browse<span class="text-yellow-400">4</span>Pets
             </h1>
           </div>
-          <div class="md: hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+          <div class="hidden md: lg:flex">
+            <ul class="px-1 menu menu-horizontal">
               <li><a href="#">Find a pet</a></li>
               <li><a href="#">Breeds</a></li>
               <li><a href="#">Contact us</a></li>
             </ul>
           </div>
-          <div class="lg:flex gap-4">
-            <button class="md: hidden lg:flex">
+          <div class="gap-4 lg:flex">
+            <button class="hidden md: lg:flex">
               <img src="./assets/bell.png" alt="" />
             </button>
-            <button class="md: hidden lg:flex">
+            <button class="hidden md: lg:flex">
               <img src="./assets/search.png" alt="" />
             </button>
             <a
-              class="btn bg-transparent border border-yellow-400 md: hidden lg:flex"
+              class="hidden bg-transparent border border-yellow-400 btn md: lg:flex"
               >Login</a
             >
-            <a class="btn bg-yellow-400 md: hidden lg:flex">Register</a>
-            <button class="md: flex lg:hidden">
+            <a class="hidden bg-yellow-400 btn md: lg:flex">Register</a>
+            <button class="flex md: lg:hidden">
               <img src="./assets/menu.png" alt="" />
             </button>
           </div>
         </div>
       </nav>
       <!-- Banner -->
-      <div
-        class="hero w" style="background-image: url(./assets/cat-big.png);"
-      >
-        <div class="hero-overlay bg-opacity-0 ">
-            
-        </div>
-        <div class="hero-content mb-24">
-          <div class="">
-            <h1 class="mb-5 text-5xl font-bold adlam-display">Pamper Your Pet,<br>Because They Deserve<br>The Best</h1>
-            <p class="mb-5">
-                Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+        <div class="mt-20 md:flex-col sm:flex-col adlam-display">
+          <div class="max-w-xl ">
+            <h2 class="mb-10 text-5xl">
+              Pamper Your Pet,<br />Because They Deserve<br />The Best
+            </h2>
+            <p class="mb-10">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends. Shop now and make tails wag with joy!
             </p>
-            <button class="btn btn-primary">Get Started</button>
+            <button class="bg-yellow-400 btn">Find a pet</button>
+          </div>
+          <div class="">
+            <img src="/assets/cat-big.png" alt="" class="w-full" />
           </div>
         </div>
-      </div>
     </header>
+    <main>
+      <!-- Browse Category -->
+       <section class="mt-20">
+        <h2 class="mb-10 text-4xl adlam-display">Browse By Categories</h2>
+        <!-- Pets Cards -->
+        <div class="flex justify-center gap-10">
+          <!-- pet card 1 -->
+          <div class="h-64 shadow-xl w-[220px] card bg-base-100 bg-card-bg">
+            <figure class="px-9 pt-9">
+                <div class="p-5 bg-white rounded-full">
+                  <img src="assets/dog-cartoon.png" />
+              </div>
+            </figure>
+            <div class="items-center text-center card-body">
+              <h2 class="text-2xl card-title adlam-display">Dogs</h2>
+              <p class="text-xl sora">3 Items</p>
+            </div>
+          </div>
+          <!-- pet card 2 -->
+          <div class="h-64 shadow-xl w-[220px] card bg-base-100 bg-card-bg">
+            <figure class="px-9 pt-9">
+                <div class="p-5 bg-white rounded-full">
+                  <img src="assets/fish-cartoon.png" />
+              </div>
+            </figure>
+            <div class="items-center text-center card-body">
+              <h2 class="text-2xl card-title adlam-display">Dogs</h2>
+              <p class="text-xl sora">3 Items</p>
+            </div>
+          </div>
+          <!-- pet card 3 -->
+          <div class="h-64 shadow-xl w-[220px] card bg-base-100 bg-card-bg">
+            <figure class="px-9 pt-9">
+                <div class="p-5 bg-white rounded-full">
+                  <img src="assets/cat-cartoon.png" />
+              </div>
+            </figure>
+            <div class="items-center text-center card-body">
+              <h2 class="text-2xl card-title adlam-display">Dogs</h2>
+              <p class="text-xl sora">3 Items</p>
+            </div>
+          </div>
+          <!-- pet card 4 -->
+          <div class="h-64 shadow-xl w-[220px] card bg-base-100 bg-card-bg">
+            <figure class="px-9 pt-9">
+                <div class="p-5 bg-white rounded-full">
+                  <img src="assets/bird-cartoon.png" />
+              </div>
+            </figure>
+            <div class="items-center text-center card-body">
+              <h2 class="text-2xl card-title adlam-display">Dogs</h2>
+              <p class="text-xl sora">3 Items</p>
+            </div>
+          </div>
+          <!-- pet card 5 -->
+          <div class="h-64 shadow-xl w-[220px] card bg-base-100 bg-card-bg">
+            <figure class="px-9 pt-9">
+                <div class="p-5 bg-white rounded-full">
+                  <img src="assets/mouse-cartoon.png" />
+              </div>
+            </figure>
+            <div class="items-center text-center card-body">
+              <h2 class="text-2xl card-title adlam-display">Dogs</h2>
+              <p class="text-xl sora">3 Items</p>
+            </div>
+          </div>
+          <!-- pet card 6 -->
+          <div class="h-64 shadow-xl w-[220px] card bg-base-100 bg-card-bg">
+            <figure class="px-9 pt-9">
+                <div class="p-5 bg-white rounded-full">
+                  <img src="assets/rabbit-cartoon.png" />
+              </div>
+            </figure>
+            <div class="items-center text-center card-body">
+              <h2 class="text-2xl card-title adlam-display">Dogs</h2>
+              <p class="text-xl sora">3 Items</p>
+            </div>
+          </div>
+        </div>
+       </section>
+    </main>
   </body>
 </html>
