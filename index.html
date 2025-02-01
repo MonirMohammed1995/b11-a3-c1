@@ -40,6 +40,11 @@
         font-weight: 400;
         font-style: normal;
       }
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
     </style>
     <script>
       tailwind.config = {
@@ -108,12 +113,11 @@
         </div>
     </header>
     <main>
-      <section>
+      <section class="container mx-auto">
         
       </section>
-      
       <!-- Browse Category -->
-       <section class="container mt-20">
+       <section class="container mx-auto mt-20">
         <h2 class="px-5 mb-10 text-4xl font-bold adlam-display lg:text-left">Browse By Categories</h2>
         <!-- Pets Cards -->
         <div class="container grid-cols-2 gap-10 px-10 mx-auto md:container lg:flex sm:grid">
@@ -192,7 +196,7 @@
         </div>
        </section>
        <!-- Trending Pet Products -->
-        <section class="bg-yellow-50">
+        <section class="container mx-auto bg-yellow-50">
           <div class="container mx-auto">
             <h2 class="mt-20 text-4xl font-bold p-7 adlam-display">Trending Pet Products</h2>
           </div>
@@ -214,7 +218,7 @@
               </div>
             </div>
             <!-- Rating Card -->
-            <div class="items-center grid-cols-2 gap-6 lg:grid-cols-3 lg:grid sm:grid">
+            <div class="container items-center gap-6 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:grid sm:grid">
               <!-- Rating Card 1 -->
               <div class="card card-side bg-base-100 sora w-[230px] h-[115px]">
                 <figure class="p-2">
@@ -336,20 +340,20 @@
           </div>
         </section>
         <!-- Low Price -->
-        <section class="container mt-20">
+        <section class="container mx-auto mt-20">
           <div>
             <h2 class="p-6 text-4xl font-bold adlam-display">Everyday low Price</h2>
           </div>
-          <div class="lg:flex">
+          <div class="flex-wrap lg:flex">
             <!--Card Big  -->
-            <div class="flex items-center justify-center w-[790px] h-[480px] rounded-lg m-7 bg-gradient-to-r from-purple-300 to-blue-300 sm:text-start md:text-start">
+            <div class="flex sm:flex-wrap items-center justify-center w-[790px] h-[480px] rounded-lg m-7 bg-gradient-to-r from-purple-300 to-blue-300 sm:text-start md:text-start">
               <div class="bg-transparent">
                 <h3 class="py-3 text-3xl sora">Under Price</h3>
                 <h2 class="py-3 text-4xl font-bold adlam-display">Pet Grooming Mitt</h2>
                 <h3 class="py-3 text-3xl text-white adlam-display ">(Easy Hair Removal)</h3>
                 <h1 class="py-3 text-5xl adlam-display">$7.99</h1>
               </div>
-              <img class="max-w-50" src="./assets/cute-dog-mid.png" alt="">
+              <img class="" src="./assets/cute-dog-mid.png" alt="">
             </div>
             <!-- Card tiny -->
              <div class="flex justify-center w-[520px] rounded-lg h-[480px] m-7 bg-gradient-to-r from-orange-50 to-yellow-200">
@@ -362,8 +366,8 @@
           </div>
         </section>
         <!-- News Section -->
-         <section class="max-w-6xl mx-auto mt-20">
-          <div class="flex items-center justify-center gap-10 p-4 text-center md:flex-col lg:flex-row bg-yellow-50 rounded-xl">
+         <section class="container mx-auto mt-20">
+          <div class="flex items-center justify-center gap-10 p-4 text-center sm:flex-wrap bg-yellow-50 rounded-xl">
             <!-- Image -->
             <div>
               <figure>
