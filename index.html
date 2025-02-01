@@ -40,10 +40,17 @@
         font-weight: 400;
         font-style: normal;
       }
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
+      @keyframes marquee-reverse {
+        0% {
+          transform: translateX(-100%);
         }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+      .animate-marquee-reverse {
+        display: inline-block;
+        animation: marquee-reverse 8s linear infinite;
       }
     </style>
     <script>
@@ -113,7 +120,13 @@
       </div>
     </header>
     <main>
-      <section class="container mx-auto"></section>
+      <section class="container mx-auto">
+        <div class="w-full overflow-hidden whitespace-nowrap">
+          <div class="inline-block text-5xl animate-marquee-reverse adlam-display">
+            🔥 Limited-time offer! 25% discount Grab yours now! 🛍️
+          </div>
+        </div>
+      </section>
       <!-- Browse Category -->
       <section class="container mx-auto mt-20">
         <h2 class="px-5 mb-10 text-4xl font-bold adlam-display lg:text-left">
@@ -205,9 +218,7 @@
           </h2>
         </div>
         <div class="grid gap-0 lg:grid-cols-2">
-          <div
-            class="bg-card-bg rounded-2xl max-w-96 max-h-96"
-          >
+          <div class="bg-card-bg rounded-2xl max-w-96 max-h-96">
             <div class="m-5">
               <div>
                 <h2 class="py-4 text-3xl font-bold adlam-display">
@@ -228,7 +239,9 @@
             </div>
           </div>
           <!-- Rating Card -->
-          <div class="container grid gap-2 mx-auto mt-10 lg:grid-cols-3 sm:grid-cols-2">
+          <div
+            class="container grid gap-2 mx-auto mt-10 lg:grid-cols-3 sm:grid-cols-2"
+          >
             <!-- Rating Card 1 -->
             <div class="p-2 max-w-48 max-h-36 card card-side bg-base-100 sora">
               <figure class="p-2">
@@ -402,13 +415,15 @@
               <h2 class="py-3 text-3xl font-bold adlam-display">
                 Pet Grooming Mitt
               </h2>
-              <h3 class="py-3 text-2xl text-white adlam-display md:block sm:hidden">
+              <h3
+                class="py-3 text-2xl text-white adlam-display md:block sm:hidden"
+              >
                 (Easy Hair Removal)
               </h3>
-              <h1 class="text-5xl adlam-display ">$7.99</h1>
+              <h1 class="text-5xl adlam-display">$7.99</h1>
             </div>
             <div class="">
-              <img src="./assets/cute-dog-mid.png" alt="" class="ml-auto"/>
+              <img src="./assets/cute-dog-mid.png" alt="" class="ml-auto" />
             </div>
           </div>
           <!-- Card tiny -->
